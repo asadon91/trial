@@ -1,0 +1,28 @@
+from operator import itemgetter
+
+def kruskal( nodes, edges ):
+    nd=[]
+    mst = []
+    
+
+    sz = len(nodes) - 1
+
+    for e in sorted( edges, key=itemgetter( 2 ) ):
+        
+                return mst
+        
+            forest.union(t1, t2)
+
+
+#test  
+
+nodes = list( "ABCDEFG" )
+edges = [ ("A", "B", 7), ("A", "D", 5),
+          ("B", "C", 8), ("B", "D", 9), ("B", "E", 7),
+	  ("C", "E", 5),
+	  ("D", "E", 15), ("D", "F", 6),
+	  ("E", "F", 8), ("E", "G", 9),
+	  ("F", "G", 11)]
+		
+print kruskal( nodes, edges )
+#output: [('A', 'D', 5), ('C', 'E', 5), ('D', 'F', 6), ('A', 'B', 7), ('B', 'E', 7), ('E', 'G', 9)]
